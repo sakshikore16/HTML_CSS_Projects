@@ -1,0 +1,43 @@
+@keyframes suntrack {    
+    from { transform: rotate(.15turn); }
+    to { transform: rotate(-.85turn); }
+  }
+  @keyframes sunpulse { 
+     from { box-shadow: 0 0 100px #ff0, 0 0 100px #ff0; }
+    to { box-shadow: 0 0 50px #ff0, 0 0 75px #ff0;  }
+  }
+  body { margin: 0; 
+    background-color: #000;
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/starfield_stock_1.jpg); 
+    background-size:cover;
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  .sun {
+    width: 15vw;
+    height: 15vw;
+    background: #ff0;
+    background: radial-gradient(ellipse at center, #f90 0%,#fc0 60%,#ff0 100%);
+    border-radius: 100%;
+    position: absolute;
+    bottom: -7vw;
+    right: 7vw;
+    transform-origin: -28vw 7vw;
+    animation: suntrack 24s infinite forwards linear, sunpulse 2s alternate infinite; 
+  }
+  .moon { 
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/moon8.png);
+    width: 15vw;
+    height: 15vw;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90% 90%;
+    border-radius: 100%;
+    bottom: -7vw;
+    right: 7vw;
+    transform-origin: -28vw 7vw;
+    animation: moontrack 24s infinite forwards linear;
+    opacity: .8;
+  }
