@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500;600;700&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+}
+
+video{
+    position:relative;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+h2{
+    mix-blend-mode: screen;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    font-size: 30vw;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    
+}
+
+a:hover{
+    cursor: crosshair ;
+}
